@@ -26,3 +26,12 @@
 > [!NOTE]
 > 본 예산 집행표는 실제 구매 내역을 기반으로 작성되었으며, 소모품 항목은 변동 가능성을 고려해 제외하였습니다.
 > **당시 23년도 03월 01일 부터 06월 30일까지 약 3개월간 지출 내역입니다.**
+
+## 3. 회로 설계도
+
+<img src="Smart_Waste_Containe_OR.CAD.png" alt="Smart_Waste_Containe_OR.CAD.png"> </img>
+
+## 4. 부품 데이터 도면
+
+<img width="1030" height="758" alt="image" src="https://github.com/user-attachments/assets/ba95039b-1e41-479c-88f1-9caebff1be62" />
+<img width="1006" height="678" alt="image" src="https://github.com/user-attachments/assets/47f48332-c9c9-4e59-b026-6f2f25103783" />
