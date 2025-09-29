@@ -2,7 +2,10 @@
 
 [0. 팀원](#0-기간-및-팀-구성원)  
 [1. 개요](#1-개요)  
-[2. 예산 집행 계획 및 소계](#2-예산-집행-계획-및-소계)
+[2. 예산 집행 계획 및 소계](#2-예산-집행-계획-및-소계)  
+[3. 회로 설계도](#3-회로-설계도)  
+[3.2 개발 과정](#3-2-개발-과정)  
+[4. 부품 데이터 도면](#4-부품-데이터-도면)  
 
 ## 0. 기간 및 팀 구성원
 사전 팀 구성 기간 : `2023. 02. 01. ~ 30.`  
@@ -30,6 +33,26 @@
 ## 3. 회로 설계도
 
 <img src="Smart_Waste_Containe_OR.CAD.png" alt="Smart_Waste_Containe_OR.CAD.png"> </img>
+
+### 3.2 개발 과정
+* Arduino UNO R3 보드를 사용하여 저전압인 5V 기준으로 설계 했습니다. 초음파 센서의 Triger는 8번과 10번, Echo는 9번과 11번으로 지정
+  ```c
+  #define triggerPin1 8
+  #define echoPin1 9
+  #define triggerPin2 10
+  #define echoPin2 11
+  ```
+
+* 기본 Default 통신 넘버링인 9600번을 할당하여 각 `pinMod`를 통한 시리얼 통신을 연결하고 두 개의 초음파 센서의 Triger과 Echo의 입출력 방식을 지정
+  ```c
+  void setup() {
+      Serial.begin(9600);
+      pinMod(triggerPin1, OUTPUT);
+      pinMod(echoPin1, INPUT);
+      pinMod(triggerPin2, OUTPUT);
+      pinMod(echoPin2, INPUT);
+  }
+  ```
 
 ## 4. 부품 데이터 도면
 
